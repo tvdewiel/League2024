@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LeagueBL.Model.Speler" Collapsed="true">
+    <Position X="1.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAABAABAAgAAABABAAKAAAMAAEAAEAAAAAAI=</HashCode>
+      <FileName>Model\Speler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Team" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LeagueBL.Model.Team" Collapsed="true">
+    <Position X="1.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAACAAAoIAARAAAAJIAAIACAAAIAAAAAAA=</HashCode>
+      <FileName>Model\Team.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="spelers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LeagueBL.Model.Transfer" Collapsed="true">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <AssociationLine Name="Speler" Type="LeagueBL.Model.Speler" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="3.75" />
+        <Point X="5" Y="1.531" />
+        <Point X="3.25" Y="1.531" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAgAEAAAQAAAQCAAAAAAAgAAAIEAACAAAAAAEAEA=</HashCode>
+      <FileName>Model\Transfer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NieuwTeam" />
+      <Property Name="OudTeam" />
+      <Property Name="Speler" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
