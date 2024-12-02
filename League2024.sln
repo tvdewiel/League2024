@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueBL", "LeagueBL\LeagueBL.csproj", "{F235BDA6-1982-4230-8F16-EE42CF3B5657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeagueBL", "LeagueBL\LeagueBL.csproj", "{F235BDA6-1982-4230-8F16-EE42CF3B5657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueDL", "LeagueDL\LeagueDL.csproj", "{49BB6563-BAA5-4A35-A8A8-5DBCDA25DBFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeagueDL", "LeagueDL\LeagueDL.csproj", "{49BB6563-BAA5-4A35-A8A8-5DBCDA25DBFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueUI", "LeagueUI\LeagueUI.csproj", "{7C854769-2BEA-451E-9377-70279FABBB85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeagueUI", "LeagueUI\LeagueUI.csproj", "{7C854769-2BEA-451E-9377-70279FABBB85}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3E114AFB-FE35-4EEB-90B1-F2472169B331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDomein", "TestDomein\TestDomein.csproj", "{C5E477E7-94E7-451B-ACEC-9A53D2250E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDomein", "TestDomein\TestDomein.csproj", "{C5E477E7-94E7-451B-ACEC-9A53D2250E11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApps", "TestApps", "{0C6B755E-CFB3-4C3E-85B1-6DCDA7EEDA91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppTestSpelerDB", "ConsoleAppTestSpelerDB\ConsoleAppTestSpelerDB.csproj", "{018621CB-783A-4F78-B8DF-28BAA519D05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppTestAppConfig", "WpfAppTestAppConfig\WpfAppTestAppConfig.csproj", "{BBC500FF-0C83-45B8-8DC9-277889A80CEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +41,22 @@ Global
 		{C5E477E7-94E7-451B-ACEC-9A53D2250E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5E477E7-94E7-451B-ACEC-9A53D2250E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E477E7-94E7-451B-ACEC-9A53D2250E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018621CB-783A-4F78-B8DF-28BAA519D05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018621CB-783A-4F78-B8DF-28BAA519D05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018621CB-783A-4F78-B8DF-28BAA519D05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018621CB-783A-4F78-B8DF-28BAA519D05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC500FF-0C83-45B8-8DC9-277889A80CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC500FF-0C83-45B8-8DC9-277889A80CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC500FF-0C83-45B8-8DC9-277889A80CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC500FF-0C83-45B8-8DC9-277889A80CEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C5E477E7-94E7-451B-ACEC-9A53D2250E11} = {3E114AFB-FE35-4EEB-90B1-F2472169B331}
+		{018621CB-783A-4F78-B8DF-28BAA519D05E} = {0C6B755E-CFB3-4C3E-85B1-6DCDA7EEDA91}
+		{BBC500FF-0C83-45B8-8DC9-277889A80CEF} = {0C6B755E-CFB3-4C3E-85B1-6DCDA7EEDA91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E24E4D2-919B-4A9C-B55E-31025384C86F}

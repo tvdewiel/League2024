@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeagueBL.Model
 {
-    internal class Transfer
+    public class Transfer
     {
         public Transfer(Speler speler, Team oudTeam) //stopt
         {
