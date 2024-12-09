@@ -48,5 +48,24 @@ namespace LeagueBL.Managers
             catch(SpelerManagerException) { throw; }
             catch(Exception ex) { throw new SpelerManagerException("SelecteerSpelers", ex); }
         }
+
+        public void UpdateSpeler(SpelerInfo spelerInfo)
+        {
+            if (spelerInfo == null) throw new SpelerManagerException("updatespeler - spelerinfo is null");
+           
+            if (repo.BestaatSpeler(spelerInfo.Id))
+            {
+                //update speler
+                Speler speler=repo.SelecteerSpeler(spelerInfo.Id);
+                
+                //check aanpassingen
+                speler.ZetGewicht((int)spelerInfo.Gewicht);
+
+
+                repo.UpdateSpeler(speler);
+            }
+            else { throw new SpelerManagerException("speler bestaat niet"); }
+
+        }
     }
 }

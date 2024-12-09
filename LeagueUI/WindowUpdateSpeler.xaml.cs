@@ -33,7 +33,21 @@ namespace LeagueUI
 
         private void UpdateSpelerButton_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                int spelerId=int.Parse(SpelerIDTextBox.Text);
+                int? gewicht = null;
+                if (!string.IsNullOrWhiteSpace(GewichtTextBox.Text)) {gewicht=int.Parse(GewichtTextBox.Text);}
+                int? lengte = null;
+                if (!string.IsNullOrWhiteSpace(LengteTextBox.Text)) { lengte = int.Parse(LengteTextBox.Text); }
+                int? rugnummer = null; ;
+                if (!string.IsNullOrWhiteSpace(RugnummerTextBox.Text)) { rugnummer = int.Parse(RugnummerTextBox.Text); }
+                SpelerInfo spelerInfo = new SpelerInfo(spelerId,SpelerNaamTextBox.Text,rugnummer,lengte,gewicht);
+                spelerManager.UpdateSpeler(spelerInfo);
+                MessageBox.Show($"Speler : {spelerInfo}", "Speler is up to date");
+                Close();
+            }
+            catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void ZoekSpelerButton_Click(object sender, RoutedEventArgs e)

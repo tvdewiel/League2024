@@ -9,6 +9,15 @@ namespace LeagueBL.DTO
 {
     public class SpelerInfo
     {
+        public SpelerInfo(int id, string naam, int? rugnummer, int? lengte, int? gewicht)
+        {
+            Id = id;
+            Naam = naam;
+            Rugnummer = rugnummer;
+            Lengte = lengte;
+            Gewicht = gewicht;
+        }
+
         public SpelerInfo(int id, string naam, int? rugnummer, int? lengte, int? gewicht, string team)
         {
             Id = id;
