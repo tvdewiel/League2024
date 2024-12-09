@@ -20,5 +20,16 @@ namespace LeagueUI
         {
             InitializeComponent();
         }
+
+        private void UpdateSpeler_ButtonClick(object sender, RoutedEventArgs e)
+        {
+            WindowUpdateSpeler w = new WindowUpdateSpeler();
+            w.ShowDialog();
+        }
+
+        private void UpdateTeam_ButtonClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

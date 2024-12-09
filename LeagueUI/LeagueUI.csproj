@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LeagueBL\LeagueBL.csproj" />
+    <ProjectReference Include="..\LeagueDL\LeagueDL.csproj" />
+  </ItemGroup>
+
 </Project>

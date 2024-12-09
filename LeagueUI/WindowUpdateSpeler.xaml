@@ -1,0 +1,44 @@
+﻿<Window x:Class="LeagueUI.WindowUpdateSpeler"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeagueUI"
+        mc:Ignorable="d"
+        Title="WindowUpdateSpeler" Height="220" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="SpelerID" Margin="5"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="ZoekSpelerIDTextBox" Margin="5"/>
+        <Label Grid.Row="0" Grid.Column="2" Content="Naam" Margin="5"/>
+        <TextBox Grid.Row="0" Grid.Column="3" Name="ZoekNaamTextBox" Margin="5"/>
+        <Button Grid.Row="0" Grid.Column="4" Content="Zoek Speler" Margin="5" Click="ZoekSpelerButton_Click"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Speler" Margin="5"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Id" Margin="5"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Margin="5" Name="SpelerIDTextBox" IsEnabled="False"/>
+        <Label Grid.Row="1" Grid.Column="3" Content="Team" Margin="5"/>
+        <TextBox Grid.Row="1" Grid.Column="4" Margin="5" Name="TeamTextBox" IsEnabled="False"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Naam" Margin="5"/>
+        <TextBox Grid.Row="2" Grid.Column="2" Margin="5" Name="SpelerNaamTextBox"/>
+        <Label Grid.Row="2" Grid.Column="3" Content="Rugnummer" Margin="5"/>
+        <TextBox Grid.Row="2" Grid.Column="4" Margin="5" Name="RugnummerTextBox"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Gewicht" Margin="5"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Margin="5" Name="GewichtTextBox"/>
+        <Label Grid.Row="3" Grid.Column="3" Content="Lengte" Margin="5"/>
+        <TextBox Grid.Row="3" Grid.Column="4" Margin="5" Name="LengteTextBox"/>
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" Content="Update Speler" Click="UpdateSpelerButton_Click" Margin="5"/>
+    </Grid>
+</Window>
